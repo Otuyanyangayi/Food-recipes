@@ -173,7 +173,11 @@ body{
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
 }
-
+span:hover{
+    color:red;
+    padding: auto;
+    border: #2b3030;
+}
 
 
 
