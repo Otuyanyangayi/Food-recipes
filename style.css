@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 :root {
-    --aqua-dark: #2b3030;
+    --aqua-dark: teal;
     --aqua-light: #2ea299;
 }
 body {
@@ -111,7 +111,7 @@ body {
 .meal-name {
     padding: 1.5rem 0.5rem;
 }
-.meal-name h3 {
+.meal-name h3{
     font-size: 1.4rem;
 }
 .recipe-btn {
@@ -159,7 +159,7 @@ body {
     width: 90%;
     height: 90%;
     overflow-y: scroll;
-    display: none;
+    display: block;
     padding: 2rem 0;
 }
 .meal-details::-webkit-scrollbar {
@@ -174,7 +174,11 @@ body {
     -o-border-radius: 2rem;
 }
 
-
+span:hover {
+    color: red;
+    padding: 0;
+    border: #2b3030;
+}
 
 /*stylling js*/
 .showRecipe {
@@ -186,11 +190,9 @@ body {
 .meal-detail-content p{
     padding: 1rem 0;
 }
-
 .meal-detals-content {
     margin: 2rem;
 }
-
 .recipe-close-btn {
     position: absolute;
     right: 2rem;
@@ -205,18 +207,16 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    display: flex;
+    display: flexbox;
     align-items: center;
-    justify-content: content;
-    opacity: 0;
+    justify-content: center;
+    
 
 }
-
 .recipe-title {
     letter-spacing: 1px;
     padding-bottom: 1rem;
 }
-
 .recipe-category {
     background: #fff;
     font-weight: 600;
@@ -224,12 +224,11 @@ body {
     display: inline-block;
     padding: 0.2rem 0.5rem;
     border-radius: 0.3rem;
-    -webkit-border-raduis: 0.3re;
+    -webkit-border-raduis: 0.3rem;
     -moz-border-radius: 0.3rem;
     -ms-border-radius: 3rem;
-    -o-border-raduis: 00.3rem;
+    -o-border-raduis: 0.3rem;
 }
-
 .recipe-category {
     background: #fff;
     font-weight: 600;
@@ -238,18 +237,16 @@ body {
     padding: 0.2rem 0.5rem;
     border-radius: 0.3rem;
     -webkit-border-radius: 0.3rem;
-    -webkit-border-raduis: 0.3re;
+    -webkit-border-raduis: 0.3rem;
     -moz-border-radius: 0.3rem;
     -ms-border-radius: 3rem;
     -o-border-raduis: 00.3rem;
 
 }
-
 .recipe-instruct {
     padding: 1rem 0;
 
 }
-
 .recipe-meal-img img {
     width: 100px;
     height: 100px;
@@ -261,11 +258,9 @@ body {
     margin: 0 auto;
     display: block;
 }
-
 .recipe-link {
     margin: 1.4rem 0;
 }
-
 .recipe-link a {
     color: #fff;
     font-size: 1.2rem;
@@ -281,16 +276,13 @@ body {
     -o-transition: all 0.4s linear;
 
 }
-.recipoe-link a:hover{
+.recipe-link a:hover{
     opacity: 0.8;
 }
 
 
-
-
-
 /* standardising screen */
-@media screen and(min-width:600px) {
+@media screen and (min-width:600px) {
     .meal-search-box {
         width: 540px;
         margin-left: auto;

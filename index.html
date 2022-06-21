@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" , initilial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Recipes </title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -25,18 +25,51 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
-                </div>
-                <div class="meal-result">
-                    <h2 class="title">Your Search Results:</h2>
-                    <div id="meal">
-                        <div class="meal-item">
-                            <div class="meal-img">
-                                <img src="meatballs.jpeg" alt="meat balls ">
+            </div>
+            <div class="meal-result">
+                <h2 class="title">Your Search Results:</h2>
+                <div id="meal">
+                    <!--meal item-->
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="meatballs.jpeg" alt="meat balls ">
+                        </div>
+                        <div class="meal-name">
+                            <h3>Meat Balls </h3>
+                            <a style="float: left;" href="#" class="recipe-btn">Get Recipe</a>
+                            <a style="float: right;" href="#" class="recipe-btn">Add Review</a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="meal-details">
+                        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+
+
+                        <div class="meal-details-content">
+                            <h2 class="recipe-title">Meals Name Here </h2>
+                            <p class="recipe-category">Category Name</p>
+                            <div class="recipe-instruct">
+                                <h3>Instractions:</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                    veritatis fugiat debitis et sit delectus ratione consectetur accusantium,
+                                    nisi provident modi doloremque ipsa mollitia, incidunt quidem
+                                    veniam dolorem unde suscipit!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                    veritatis fugiat debitis et sit delectus ratione consectetur accusantium,
+                                    nisi provident modi doloremque ipsa mollitia, incidunt quidem
+                                    veniam dolorem unde suscipit!</p>
                             </div>
-                            <div class="meal-name">
-                                <h3>Meat Balls </h3>
-                                <a href="#" class="recipe-btn">Get Recipe</a>
+                            <div class="recipe-meal-img">
+                                <img scr="meatballs.jpeg" alt="meatballs">
                             </div>
+                            <div class="recipe-link">
+                                <a href="#" target="_blank">Watch Video</a>
+                            </div>
+
                         </div>
 
                     </div>
@@ -47,14 +80,19 @@
 
         </div>
 
+    </div>
 
 
 
+    <footer>
+        <span>Created By <a href="https://github.com/Otuyanyangayi">Otuya-Nyangayi</a> | Web developer</span>
+        <br>
+        <span><span class="fa fa-copyright"></span>2022 All rights reserved</span>
+    </footer>
 
 
 
-
-        <script src="./index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
