@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // adding event listerners
     searchBtn.addEventListener('click', getMealList)
-    // get matching recipes 
+    // get matching list of recipes 
     function getMealList() {
         let searchInputTxt = document.getElementById('search-input').value.trim()
         fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class ="meal-name">
                 <h3>${meal.strMeal}</h3>
-                <a style="float:left; href = "#" class ="recipe-btn">Get Recipe</a>
-                <a style="float: right;" href="#" class="recipe-btn">Add Review</a>
+                <a style = "float:left" href = "#" class ="recipe-btn">Get Recipe</a>
+                <button> <i  class="fa fa-heart fa-lg" style="color: rgb(233, 27, 12);font-size: medium; text-decoration: none;"></i> </button> 
                 </div>
                 </div>
                 `
