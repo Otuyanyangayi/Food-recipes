@@ -2,11 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // declaring elements
     const searchBtn = document.getElementById('search-btn')
     const mealList = document.getElementById('meal')
+    const mealDetails = document.querySelector('meal-details-content')
+    const recipeCloseButton = document.getElementById('recipe-close-btn')
 
-    // adding event listerners
-    searchBtn.addEventListener('click', getMealList)
+   
     // get matching list of recipes 
-    function getMealList() {
+    const displayMealList = () => {
         let searchInputTxt = document.getElementById('search-input').value.trim()
         fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
             .then(res => res.json())
@@ -28,12 +29,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 `
                     })
 
+                }else {
+                    html = " Sorry, no recipes were found!"
+                    mealList.classList.add('notFound')
                 }
-                mealList.innerHTML = html
+                mealList.innerHTML = html 
+                
             })
 
     }
+    searchBtn.addEventListener('click', displayMealList)
+    const displayMealRecipe = (event) => {
+        event.preventDefault()
+        console.log(event.target.value)
 
+
+
+    }
+
+    mealList.addEventListener('click', displayMealRecipe)
 
 
 })
