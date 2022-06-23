@@ -14,10 +14,11 @@
         <div class="meal-wrapper">
             <div class="meal-search">
                 <h2 class="title">Find Food Recipes </h2>
-                <blockquote>
-                    Good food is the foundation of genuine happiness.<br>
-                    <cite>~Auguste Escoffier</cite>
-                </blockquote>
+              <!--  <blockquote id="blockquote">
+                    Quote goes hear<br>
+                    <cite>author</cite>
+                </blockquote> -->
+                <button id="quote"> Generate New quote</button>
 
                 <div class="meal-search-box">
                     <input type="text" class="search-control" placeholder="Enter a food type" id="search-input">
@@ -38,8 +39,9 @@
                         </div>
                         <div class="meal-name">
                             <h3>Meat Balls </h3>
-                            <a style="float: left;" href="#" class="recipe-btn">Get Recipe</a>
-                            <a style="float: right;" href="#" class="recipe-btn">Add Review</a>
+                            <a  href="#" class="recipe-btn">Get Recipe</a>
+                           <button> <i  class="fa fa-heart fa-lg" style="color: rgb(233, 27, 12);font-size: medium; text-decoration: none;"></i> </button> 
+                            
 
                         </div>
                     </div> -->
@@ -51,7 +53,7 @@
 
 
                         <div class="meal-details-content">
-                            <h2 class="recipe-title">Meals Name Here </h2>
+                           <!-- <h2 class="recipe-title">Meals Name Here </h2>
                             <p class="recipe-category">Category Name</p>
                             <div class="recipe-instruct">
                                 <h3>Instractions:</h3>
@@ -69,11 +71,29 @@
                             </div>
                             <div class="recipe-link">
                                 <a href="#" target="_blank">Watch Video</a>
-                            </div>
+                            </div> -->
+                            <h3>Comments</h3>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <ul id="list-comment" class="list-unstyled">
+                                <li class="d-flex justify-content-start align-items-center">
+                                  <p class="me-3">2021-11-20</p>
+                                  <p class="me-3">Catherine</p>
+                                  <p>This is a good recipe. A must try!</p>
+                                </li>
+                              
+                                
+                              </ul>
+                              </div>
+                              <h3>Add a comment</h3>
+                              <form autocomplete="off" class="w-50 mx-auto">
+                                <input type="text" class="form-control w-75 mx-auto mb-2" id="commentator" placeholder="Your name">
+                                <textarea id="comment" name="comment" placeholder="Your comment..."></textarea>
+                                <button type="button" class="btn btn-secondary commentBtn">Comment</button>
+                              </form>
 
-                        </div>
+                        </div> 
 
-                    </div>
+                    </div> 
 
                 </div>
 
