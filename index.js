@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mealList = document.getElementById('meal')
     const mealDetails = document.querySelector('.meal-details-content')
     const recipeCloseButton = document.getElementById('recipe-close-btn')
-    const quoteBtn = document.getElementById('quote')
+   
   
     recipeCloseButton.addEventListener('click', () => {
       mealDetails.parentElement.classList.remove('showRecipe')
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       }
     }
-    mealList.addEventListener('click', displayMealRecipe)
+    mealList.addEventListener('click', displayMealRecipe) 
   
   
   
