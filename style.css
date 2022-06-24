@@ -10,7 +10,7 @@
     --aqua-light: #2ea299;
 }
 body {
-    background-color: black;
+    background-color: rgb(11, 88, 76);
     font-weight: 300;
     font-size: 1.05rem;
     line-height: 1.6;
@@ -142,7 +142,7 @@ body {
     width: 90%;
     height: 90%;
     overflow-y: scroll;
-    display: none;
+    display:none;
     padding: 2rem 0;
 }
 .meal-details::-webkit-scrollbar {
@@ -151,10 +151,7 @@ body {
 .meal-details::-webkit-scrollbar-thumb {
     background: #f0f0f0;
     border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
+    
 }
 
 span {
@@ -243,6 +240,19 @@ span {
 .recipe-link a:hover{
     opacity: 0.8;
 }
+form {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+.notFound{
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
 
 
 /* standardising screen */
