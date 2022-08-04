@@ -27,6 +27,7 @@ The projects live link: https://otuyanyangayi.github.io/Food-recipes/
  # Features 
  
  Landing page 
+ <img src="foodui.png" alt="Landing page>
  
  
  # Contact 
